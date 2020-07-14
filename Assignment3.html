@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            var d = new Date();
+            //var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            //var hours = d.getHours();
+            //var currentTime = (hours >= 12) ? (((hours==12)? hours : (hours-12))+" PM") : (hours +" AM");
+
+            //document.write("Today is : " + days[d.getDay()]+".");
+            //document.write("<br />Current time is : "+ currentTime+" : "+d.getMinutes()+" : "+d.getSeconds());
+            document.write("Current Date :");
+            document.write("<br/>(mm-dd-yyyy): " + (d.getMonth()+1)+"-"+d.getDate()+"-"+d.getFullYear());
+            document.write("<br/>(mm/dd/yyyy): " + (d.getMonth()+1)+"/"+d.getDate()+"/"+d.getFullYear());
+            document.write("<br/>(dd-mm-yyyy): " + d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getFullYear());
+            document.write("<br/>(dd/mm/yyyy): " + d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear());
+        </script>
+    </body>
+</html>
