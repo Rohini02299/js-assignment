@@ -1,0 +1,65 @@
+Question 1 : Explore and explain various console functions.
+Answer: 
+1. console.log() => Used to print(log) the output to the console.
+2. console.error() => Used to log the error message to the console.(In red color)
+3. console.warn() => Used to log warning message to the console.(In yellow color)
+4. colsole.clear() => Used to clear the console.
+5. console.time() & console.timeEnd() => Will return the time spend by a block to the console in milliseconds.
+6. console.table() => Takes a input as array or an object and generate a table.
+7. console.count() => Used to count the number that the function hit by this counting method.
+8. console.group() & console.groupEnd() => Allows to group contents in seperate block which are indented.
+9. console.info() => Used to output the informational message to the console.
+10. console.trace() = Used to output a stack trace to the console.
+
+
+
+Question 2 : Write the difference between var,let,const keywords.
+Answer: 
+1. var : This declaration is globally scoped or function scoped. This can be updated and redeclared.
+      e.g.,
+      function using_var(){
+        var a = 10;
+        console.log(a);	// 10
+        if(true){
+          var a = 20;
+         console.log(a);    // 20
+        }
+        console.log(a);    // 20
+         var a = 30;               // value can be redeclared
+         console.log(a);      // 30
+      }
+
+2. let : This declaration is locally scoped or blocked  scoped. This can be updated but cannot redeclared.
+      e.g.,
+      function using_let(){
+        let a = 10;
+        console.log(a);    // 10
+        if(true){
+          let a = 20;
+         console.log(a);   // 20
+        }
+        console.log(a);    // 10
+         let a = 30;               // value cannot be redeclared(Syntax error)
+         console.log(a);
+      }
+
+3. const : This declaration is also locally or blocked scoped. This can neither be updated nor be declared.
+      e.g.,
+      function using_const(){
+        const a = 10;
+        console.log(a);    // 10
+        const a = 20;          // value cannot be change(Type error)
+        console.log(a);  
+      }
+
+
+
+Question 3 : Write a brief intro on available data types in Javascript.
+Answer: There are six basic data types in JavaScript which can be divided into three main categories: 
+	1. => Primitive (or primary),
+	2. => Composite (or reference), and 
+	3. => Special data types. 
+
+	String, Number, and Boolean are primitive data types. 
+	Object, Array, and Function are composite data types.
+	Undefined and Null are special data types.
