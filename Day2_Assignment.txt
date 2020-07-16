@@ -1,0 +1,70 @@
+Question 1 : Write a JS code which takes input from the user and logs it in the console.
+Answer : 
+<script> 
+            var person = prompt("Please enter your name");
+            if (person != null) {
+                //document.getElementById("demo").innerHTML ="Hello " + person + "! How are you today?";
+                console.log("Hello " + person);
+            }
+</script>
+
+
+
+Question 2 : Explain with examples the remaining methods of String and Array.
+Answer : 
+             String Methods:
+	var str = "This is assumed string for string methods below.";
+
+	1. indexOf() => returns the index of first occurrence of text in string.
+	      e.g., var pos = str.indexOf("assumed");
+	
+	2. lastIndexOf() => returns the index of last occerrence of text in string.
+	      e.g., var pos = str.lastIndexOf("string");
+
+	3. search() => searches string for specified value and returns its position.
+	      e.g., var pos = str.search("string");
+
+	4. slice() => extracts part of string and returns extracted part in new string.
+	      e.g., var slicedString = str.slice(9,23);	    //from start
+	      e.g., var slicedString2 = str.slice(-8,-15);   //from end
+
+	5. substring() => extracts the part of string only from start
+	      e.g., var subString = str.substring(9,23);
+
+	6. replace() => replaces a first match of specified value with another value.
+	      e.g., var replacedString = str.replace("string","text");
+
+	7. trim() => removes whitespaces from both sides of a string.
+	      e.g., var trimmed = str.trim();
+
+             Array Methods:
+	var colors = ["red","green","blue","gray"];
+
+	1.toString() => converts an array to a stirng of array values.
+	     e.g., colors.toString();
+	
+	2. join() => joins all array elements into string.
+	     e.g., colors.join(" * ");
+
+	3. pop() => removes the last element from array.
+	     e.g., colors.pop();
+
+	4. push() => adds new element to an array.
+	     e.g., colors.push("black");
+
+	5. splice() => can be add or delete elements from an array.
+	     e.g., colors.splice(1,0,"orange");	//(position,no. of elements to be deleted,new element)
+	     e.g., colors.splice(2,1);	//deletes second element
+
+
+
+Question 3 : Ask the user if he is 21+ and log the value "Can drink","Cannot drink".
+Answer : 
+<script> 
+            var age = confirm("Are you 21+?");
+            if (age == true) {
+                console.log("You are 21+. So you can drink.");
+            }else{
+                console.log("You are not 21+. So you cannot drink.");
+            }
+</script>
