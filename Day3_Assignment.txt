@@ -1,0 +1,67 @@
+Question 1 : Take a number from a user and write a function which checks whether the number is even or odd. Assign the result to a variable and log that variable in the console.
+Answer : 
+        <script> 
+            let num = prompt("Enter the number");
+            
+            function checkNum(num){
+                let result;
+                if(num % 2 == 0)
+                    result = "even";
+                else
+                    result = "odd";
+                return result;
+            }
+            
+            let result = checkNum(num);
+            console.log(`The number entered is ${num} and Number is ${result}`);
+        </script>
+
+
+Question 2 : Write a program which will take OS name and version from the user separated by a space. Then log the OS name and version on the console.
+Answer :
+        <script>
+            let str = prompt("Enter the OS name and version");
+            let arr = str.split(" ");
+            let name = arr[0];
+            let version = arr[1];
+
+            console.log(`The OS name is ${name} and version is ${version}`);
+        </script>
+
+
+
+Question 3 : Write a program to take marks as input from the user and grade him accordingly. Use Conditional statements. Also the same code using switch or ternary.
+Answer :
+       Using if-else:
+        <script>
+            let marks = prompt("Enter the marks");
+            function calculateGrade(marks){
+                let grade;
+                if(marks <=100 && marks >=65)
+                    grade = 'A';
+                else if(marks < 65 && marks >=50)
+                    grade = 'B';
+                else if(marks<50 && marks >=35)
+                    grade = 'C';
+                else
+                    grade = 'Fail';
+
+                return grade;
+            }
+
+            let grade = calculateGrade(marks);
+            console.log(`Marks are ${marks} and grade is ${grade}`);
+        </script>
+
+       Using ternary:
+       <script>
+            let marks = prompt("Enter the marks");
+            function calculateGrade(marks){
+                let gradeTernary;
+                gradeTernary = (marks <=100 && marks >=65) ? 'A' : ((marks < 65 && marks >=50)? 'B' : ((marks<50 && marks >=35)? 'C' : 'Fail'));
+                return gradeTernary;
+            }
+
+            let gradeTernary = calculateGrade(marks);
+            console.log(`Marks are ${marks} and grade is ${gradeTernary}`);
+        </script>
