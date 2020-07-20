@@ -1,0 +1,116 @@
+Answer 1:
+    <script>
+        function fizzBuzz(){
+            for(let i=0;i<=100;i++){
+                if(i%3==0 && i%5==0)
+                    console.log(i + " fizzbuzz");
+                else if(i%3==0)
+                    console.log(i + " fizz");
+                else if(i%5 ==0)
+                    console.log(i + " buzz");
+            }
+        }
+
+        fizzBuzz();
+    </script>
+
+
+
+Answer 2 : 
+<script>
+        const student = {
+            name : "Helsinki",
+            age : 24,
+            projects : {
+                dicegame : "Two player dice game using Javascript"
+            }
+        }
+
+        console.log(student);                   //object
+        console.log(student.name);              //Helsinki
+        console.log(student.age);               //24
+        console.log(student.projects);          //object
+        console.log(student.projects.dicegame); //Two player dice game using Javascript
+
+    </script>
+
+
+
+Answer 3 :
+<script>
+        let shoppingList = ["item1","item2","item3","item4"];
+        let shoppingBasket = shoppingList.concat(["item5","item6","item7","item8"]);
+        console.log(shoppingBasket);
+    </script>
+
+
+
+Answer 5 :
+<script>
+        function calculateCommision(sales){
+            let reward;
+            let commision = 0;
+            
+            if(sales>=0 && sales<=5000)
+                reward = 0.02;
+            else if(sales>5000 && sales<=10000)
+                reward = 0.05;
+            else if(sales>10000 && sales<=20000)
+                reward = 0.07;
+            else if(sales>20000)
+                reward = 0.1;
+
+            commision = reward * sales;
+            console.log(commision);
+        }
+        
+        calculateCommision(7000);
+    </script>
+
+
+
+Answer 6 : 
+<script>
+        let num;
+        do{
+            num = prompt("Enter the number");
+            console.log(num);
+        }while(num<100 && num!="");
+    
+    </script>
+
+
+
+Answer 7 :
+    <script>
+        function isPrime(num){
+            let flag = false;
+            for(let i=2; i<num;i++){
+                if(num%i==0){
+                    console.log(num + " is Not Prime.");
+                    flag = true;
+                    break;
+                }
+            }
+            if(flag==false){
+                console.log(num + " is Prime.");
+            }
+        }
+
+        isPrime(7);
+    </script>
+
+
+
+Answer 8:
+<script>
+        function ask(question,yes,no){
+            if(confirm(question)) yes()
+            else no();
+        }
+        ask(
+            "Do you agree?",
+            () => alert("You agreed."),
+            () => alert("You canceled the execution.")
+        );
+</script>
